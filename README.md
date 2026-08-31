@@ -62,6 +62,8 @@ is the archive).
 
 ## How it runs
 
-The bot is the `/provider-watch` skill in the Pipecat repo (`.claude/skills/provider-watch/`),
-run weekly by `.github/workflows/provider-watch.yml` and on demand locally. Draft PRs it opens
+The bot's research is the `/provider-research` skill in the Pipecat repo
+(`.claude/skills/provider-research/`), run weekly by
+`.github/workflows/provider-watch.yml` and on demand locally; publishing —
+reports, draft PRs, this repo's digest issues — is `scripts/provider-watch/publish.py`. Draft PRs it opens
 on pipecat carry the `provider-watch` label.
